@@ -11782,7 +11782,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11835,12 +11835,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Display a description of the dataset</span>
 <span class="n">display</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
-<span class="n">display</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">median</span><span class="p">())</span>
 </pre></div>
 
 </div>
@@ -11947,21 +11946,6 @@ div#notebook {
 
 </div>
 
-<div class="output_area"><div class="prompt"></div>
-
-
-<div class="output_text output_subarea ">
-<pre>Fresh               8504.0
-Milk                3627.0
-Grocery             4755.5
-Frozen              1526.0
-Detergents_Paper     816.5
-Delicatessen         965.5
-dtype: float64</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -11978,7 +11962,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Select three indices of your choice you wish to sample from the dataset</span>
@@ -12173,7 +12157,7 @@ For index=86, the customer could be a cheese shop that specializes in making its
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> I attempted to predict Grocery. The reported prediciton score is 0.686. Yes, the feature is necessary in identifying customer spending habits. We can use the other categories (Fresh, Milk, Frozen, Detergents_Paper and Delicatessen) to predict Grocery spending.</p>
+<p><strong>Answer:</strong> I attempted to predict Grocery. The reported prediciton score is 0.686. No, the feature is not necessary in identifying customer spending habits. Grocery seems to be correlated with the other labels. Ideal features would be those that are independent of one another.</p>
 
 </div>
 </div>
